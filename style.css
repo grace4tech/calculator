@@ -1,0 +1,108 @@
+body{
+    width:100vw;
+    height:100vh;
+    background:linear-gradient(90deg , #1a1a1a 50% , #2a2a2a 100%);
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.calculator{
+    background:#e0e5ec;
+    width:375px;
+    height:600px;
+    border-radius:10px;
+    box-shadow:10px 10px 20px #1a1a1a , -10px -10px 20px #1a1a1a;
+    margin:50px auto;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+    position:relative;
+    left:10px;
+    top:250px;
+}
+
+.buttons button{
+    width:80px;
+    height:50px;
+    box-shadow:inset 5px 5px 10px #b8bcc2 , inset -5px -5px 10px #ffffff;
+    background: #e0e5ec;
+    border:none;
+    border-radius:10px;
+    color:black;
+    font-size:15px;
+    cursor:pointer;
+    letter-spacing:2px;
+}
+
+.buttons button.darkMode{
+box-shadow:inset 5px 5px 10px #0a0a0a , inset -5px -5px 10px #2a2a2a;
+color:white;
+background:#1a1a1a;
+}
+
+.buttons button:hover{
+background:orange;
+
+}
+
+.buttons .signs{
+    width:70px;
+    color:white;
+    font-size:15px;
+    background:#1a1a1a;
+    border:none;
+    border-radius:10px;
+    box-shadow:inset 5px 5px 10px #0a0a0a , inset -5px -5px 10px #2a2a2a;
+}
+
+.buttons .signs.lightMode{
+    box-shadow:inset 5px 5px 10px #b8bcc2 , inset -5px -5px 10px #ffffff;
+    background: #e0e5ec;
+    color:black; 
+}
+
+#perviousOutput{
+    width:375px;
+    height:50px;
+    background:#e0e5ec;
+    box-shadow: inset 5px 5px 10px #b8bcc2 ,  5px 5px 10px #ffffff;
+    color:black;
+    font-size:20px;
+    border:none;
+    text-align:right;
+    position:relative;
+}
+
+#perviousOutput p{
+    margin-right:15px;
+    padding-top:10px;
+    color:grey;
+    letter-spacing:4px;
+}
+
+#typingOutput{
+    width:374px;
+    height:50px;
+    background:#e0e5ec;
+    box-shadow: inset 5px 5px 10px #b8bcc2 ,  5px 5px 10px #ffffff;
+    color:black;
+    font-size:20px;
+    border:none;
+    text-align:right;
+    position:absolute;
+    top:250px;
+    left:464px;
+    letter-spacing:4px;
+}
+
+#typingOutput p{
+    margin-right:15px;
+    margin-top:7px;
+    padding-top:-20px;
+    font-size:25px;
+}
